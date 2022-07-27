@@ -1,0 +1,28 @@
+#navbar.layout2 #nav-belt .nav-fill{
+height: 60px;
+}
+
+#navbar.nav-flex .nav-fill{
+display: -webkit-box;
+display: -moz-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+position: static;
+float: none;
+-webkit-box: 1;
+-moz-box: 1;
+-webkit-flex: 1 1 auto;
+-ms-flex: 1 1 auto;
+flex: 1 1 auto;
+}
+
+#nav-belt .nav-fill{
+    overflow: visible;
+}
+
+.nav-fill {
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}

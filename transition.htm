@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Transition</title>
+    <style>
+        .t
+        {
+            width: 150px;
+            height: 100px;
+            background: lightblue;
+            transition: 2s;
+            transition-delay: 1s;
+        }
+        .t:hover
+        {
+            width: 250px;
+            height: 200px;
+            background: yellow;
+            border-radius: 10px;
+        }
+        .trans
+        {
+            width: 210px;
+            height: 210px;
+            background: red;
+            border: 1px dotted blue;      
+        }
+        .trans:hover
+        {
+            width: 100px;
+            height: 150px;
+            transform: translate3D(50deg,-70px,-110px);
+            background-color: blue;
+        }
+        .transform
+        {
+            width: 100px;
+            height: 150px;
+            transform: rotateX(180deg);
+            background-color: blue; 
+        }
+    </style>
+</head>
+<body>
+    <div class="t">
+        PRATIK KHUNT
+    </div>
+<br> 
+    <div class="trans">
+        PRATIK KHUNT
+    </div>
+    <div class="transform">
+        PRATIK KHUNT
+    </div>
+</body>    
+</html>
