@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f14f4f;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: #fff9c0;
+        }
+
+        .container {
+            position: relative;
+            width: 1100px;
+            height: 550px;
+            display: flex;
+            z-index: 1000;
+        }
+
+        .container .contactinfo {
+            position: absolute;
+            top: 40px;
+            width: 350px;
+            height: calc(100% - 80px);
+            background: #4f94fb;
+            z-index: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .container .contactinfo h2 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .container .contactinfo ul.info {
+            position: relative;
+            margin: 15px 0;
+        }
+
+        .container .contactinfo ul.info li {
+            position: relative;
+            list-style: none;
+            display: flex;
+            margin: 20px 0;
+            cursor: pointer;
+            align-items: flex-start;
+        }
+
+        .container .contactinfo ul.info li span:nth-child(1) {
+            width: 50px;
+        }
+
+        .container .contactinfo ul.info li span:nth-child(1) svg {
+            width: 100%;
+            color: black;
+        }
+
+        .container .contactinfo ul.info li span:nth-child(2) {
+            color: #fff;
+            margin-left: 10px;
+            font-weight: 300;
+        }
+
+        .container .contactform {
+            position: absolute;
+            padding: 70px 50px;
+            padding-left: 250px;
+            margin-left: 150px;
+            width: calc(100% - 150px);
+            height: 100%;
+            background: #fff;
+            box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .container .contactform h2 {
+            color: #0f3959;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .container .contactform .formbox {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+
+        .container .contactform .formbox .inputbox {
+            position: relative;
+            margin-bottom: 50px;
+            width: 47%;
+        }
+
+        .container .contactform .formbox .inputbox2 {
+            width: 100%;
+        }
+
+        .container .contactform .formbox .inputbox input,
+        .container .contactform .formbox .inputbox2 textarea {
+            width: 100%;
+            resize: none;
+            padding: 5px 0;
+            font-size: 18px;
+            font-weight: 300;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #777;
+        }
+
+        .container .contactform .formbox .inputbox2 textarea {
+            height: 120px;
+        }
+
+        .container .contactform .formbox .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            pointer-events: none;
+            font-size: 18px;
+            font-weight: 300;
+            transition: 0.3s;
+        }
+
+        .container .contactform .formbox .inputbox2 span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            pointer-events: none;
+            font-size: 18px;
+            font-weight: 300;
+            transition: 0.3s;
+        }
+
+        .container .contactform .formbox .inputbox input:focus~span,
+        .container .contactform .formbox .inputbox input:valid~span,
+        .container .contactform .formbox .inputbox2 textarea:focus~span,
+        .container .contactform .formbox .inputbox2 textarea:valid~span {
+            transform: translateY(-20px);
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: rgb(146, 142, 142);
+            font-weight: 500;
+        }
+
+        .container .contactform .formbox .inputbox2 input[type="submit"] {
+            position: relative;
+            cursor: pointer;
+            background: #095a55;
+            color: #fff;
+            border: none;
+            width: 150px;
+            padding: 15px;
+            margin: 25px 0;
+        }
+
+        .container .contactform .formbox .inputbox2 input[type="submit"]:hover {
+            background: #20c4b9;
+        }
+    </style>
+</head>
+
+<body>
+    <class>
+        <div class="container">
+            <div class="contactinfo">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-pin-map-fill" viewBox="0 0 16 16" style="height: 40px;">
+                                    <path fill-rule="evenodd"
+                                        d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                    <path fill-rule="evenodd"
+                                        d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                                </svg></span>
+                            <span style="margin-top: -2px;">17,Kirtidham Society<br>
+                                punagam, surat<br>
+                                395010</span>
+                        </li>
+                        <li>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-envelope-fill" viewBox="0 0 16 16" style="height: 40px;">
+                                    <path
+                                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                </svg></span>
+                            <span style="margin-top: 10px;">shopezone3112@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-telephone-forward-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z" />
+                                </svg></span>
+                            <span style="margin-top: 8px;">+91-98240 54195</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <ul class="icon">
+                    <li></li>
+                </ul> -->
+            </div>
+
+            <div class="contactform">
+                <h2>Send a Message</h2>
+                <div class="formbox">
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputbox2">
+                        <textarea required></textarea>
+                        <span>Write Your Message Here</span>
+                    </div>
+                    <div class="inputbox2">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </class> -->
+
+        <!-- <bottom>
+        <div class="footer">
+            <div class="box">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </bottom> -->
+    </class>
+</body>
+
+</html>
